@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
         mode: "development", // could be dev or prod
@@ -7,5 +8,30 @@ module.exports = {
             path: path.resolve(__dirname, "dist/"), // build folder
             filename: "bundle.js", // build entry file name
         },
-        resolve: { extensions: ["*", ".js", ".jsx"] },
+        module: {
+            rules: [
+                {
+                    test: /\.(js)x?$/i,
+                    exclude: [/node_modules/, /\.(spec|test).(js)x?$/i],
+                    loader: "babel-loader",
+                    options: {
+                        cacheDirectory: true,
+                        cacheCompression: false,
+                        compact: true,
+                    }
+                }
+            ]
+        },
+        resolve: { 
+            extensions: [".js", ".jsx", ".json"],
+            alias: {
+                src: path.resolve(__dirname, "src"),
+            },
+        },
+        plugins: [
+            new HtmlWebpackPlugin({
+                template: "public/index.html",
+                inject: true,
+            }),
+        ],
     }
