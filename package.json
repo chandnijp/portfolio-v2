@@ -1,0 +1,24 @@
+{
+  "name": "chandni-patel",
+  "version": "1.0.0",
+  "description": "My professional web dev portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandnijp/chandni-patel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandnijp/chandni-patel/issues"
+  },
+  "homepage": "https://github.com/chandnijp/chandni-patel#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
