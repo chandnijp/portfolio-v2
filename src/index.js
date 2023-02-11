@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 const App = () => {
-    return <div>Hello World</div>
-};
+  return <div>Hello World</div>
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(<App />);
+root.render(<App />)
