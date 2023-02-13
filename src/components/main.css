@@ -1,0 +1,17 @@
+.mainPage {
+    height: 100%;
+}
+
+.colourModeToggle {
+    display: flex;
+}
+
+.darkMode {
+    background-color: #000;
+    color: #fff;
+}
+
+.lightMode {
+    background-color: #fff;
+    color: #000;
+}
