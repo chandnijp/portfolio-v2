@@ -1,0 +1,16 @@
+.about {
+    height: 90%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 4em;
+}
+
+.subheader {
+    font-size: 2em;
+}

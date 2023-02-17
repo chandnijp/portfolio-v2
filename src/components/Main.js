@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import { faLightbulb as faLightbulbRegular } from '@fortawesome/free-regular-svg-icons'
 
+import { About } from './About'
+import { Navigation } from './Navigation'
+import { Work } from './Work'
 import './main.css'
 
 export const Main = () => {
@@ -24,7 +27,9 @@ export const Main = () => {
     return (
         <div className={`${colourMode} mainPage`}>
             <Toggle />
-            Hello World!!
+            <About />
+            <Work/>
+            <Navigation />
         </div>
     )
 }
