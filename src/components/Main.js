@@ -1,4 +1,9 @@
 import { useState } from 'react'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb as faLightbulbRegular } from '@fortawesome/free-regular-svg-icons'
+
 import './main.css'
 
 export const Main = () => {
@@ -10,12 +15,9 @@ export const Main = () => {
 
     const Toggle = () => (
             <div className='colourModeToggle'>
-                <div onClick={() => handleColourModeChange('dark')}>
-                    Dark
-                </div>
-                <div onClick={() => handleColourModeChange('light')}>
-                    Light
-                </div>
+                <div onClick={() => handleColourModeChange('dark')}>Off</div>
+                <p><FontAwesomeIcon icon={colourMode === 'darkMode' ? faLightbulb : faLightbulbRegular} /></p>
+                <div onClick={() => handleColourModeChange('light')}>On</div>
             </div>
         )
 
