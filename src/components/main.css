@@ -16,3 +16,21 @@
     background-color: #fff;
     color: #000;
 }
+
+.mainContent {
+    height: 80%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.intro {
+    margin-top: 40px;
+}
+
+.header {
+    font-size: 4em;
+}
+
+.subheader {
+    font-size: 2em;
+}
