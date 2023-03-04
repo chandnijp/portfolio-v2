@@ -1,17 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, createContext } from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb as faLightbulbRegular } from '@fortawesome/free-regular-svg-icons'
 
 import { Main } from './components/Main'
-import './App.css'
 import { Navigation } from './components/Navigation'
+import './App.css'
+
+export const ThemeContext = createContext(null)
 
 export const App = () => {
-    const [colourMode, setColourMode] = useState('darkMode')
+    const [theme, setTheme] = useState('dark')
 
-    const handleColourModeChange = (mode) => {
-        console.log('click')
-        mode === 'lightMode' ? setColourMode(mode) : setColourMode(mode)
+    const toggleTheme = () => {
+        setTheme((curr) => (curr === 'light' ? 'dark' : 'light'))
     }
 
-    return <BrowserRouter><div className='appMain'><Navigation colourMode={colourMode} handleColourModeChange={handleColourModeChange} /><Main colourMode={colourMode}/></div></BrowserRouter>
+    const Toggle = () => (
+        <div className='colourModeToggle'>
+            <FontAwesomeIcon className={`${theme}BulbIcon`} icon={theme === 'dark' ? faLightbulb : faLightbulbRegular} onClick={() => toggleTheme()} />
+        </div>
+    )
+
+    return (
+        <BrowserRouter>
+            <ThemeContext.Provider value={{ theme, toggleTheme }}>
+                <div className='appMain' id={theme}>
+                    <Navigation />
+                    <Main/>
+                    <Toggle />
+                </div>
+            </ThemeContext.Provider>
+        </BrowserRouter>
+    )
 }

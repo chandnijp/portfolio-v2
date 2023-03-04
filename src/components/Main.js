@@ -9,11 +9,11 @@ import { Work } from './Work'
 import { Projects } from './Projects'
 import './main.css'
 
-export const Main = (colourMode) => {
+export const Main = () => {
     const location = useLocation()
 
     return (
-        <div className={`${colourMode} mainPage`}>
+        <div className='mainPage'>
             <div className='socials'>
                 <FontAwesomeIcon icon={faLinkedinIn} size='xl' className='icon' />
                 <FontAwesomeIcon icon={faGithub} size='xl' className='icon' />
