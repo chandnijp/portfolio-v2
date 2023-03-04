@@ -15,9 +15,9 @@ export const Main = () => {
     return (
         <div className='mainPage'>
             <div className='socials'>
-                <FontAwesomeIcon icon={faLinkedinIn} size='xl' className='icon' />
-                <FontAwesomeIcon icon={faGithub} size='xl' className='icon' />
-                <FontAwesomeIcon icon={faEnvelope} size='xl' className='icon' />
+                <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} size='xl' className='icon' /></a>
+                <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faGithub} size='xl' className='icon' /></a>
+                <a href="mailto:chandnipatel10@hotmail.com?"><FontAwesomeIcon icon={faEnvelope} size='xl' className='icon' /></a>
             </div>
             <div className='mainContent'>
                 {(location.hash === '' || location.hash === '#about') && (

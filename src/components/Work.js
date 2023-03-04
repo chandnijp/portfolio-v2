@@ -9,7 +9,7 @@ export const Work = () => {
             <div className='workHeader'>Where I work</div>
             <hr />
             <div className='workDetails'>
-                <p className='workTitle'><span className='jobRole'>Full Stack Developer</span><span className='companyName'> @ Oxehealth</span></p>
+                <p className='workTitle'><span className='jobRole'>Full Stack Developer</span><a href='https://www.oxehealth.com/' target='_blank' rel="noreferrer"><span className='companyName'> @ Oxehealth</span></a></p>
                 <p className='workDuration'>June 2021 - Present</p>
                 <div className='workDescription'>
                     <div className='workDescriptionItem'><FontAwesomeIcon icon={faPlay} className='descriptionIcon'/><p className='description'>Independently working on new product features to leverage the existing platform and offerings.</p></div>

@@ -14,8 +14,8 @@ export const Project = (project) => {
                         {project.project.languages.map((language) => (<p key={`${project.project.projectName}-${language}`} className={`projectLanguage${reverseStyle}`}>{language}</p>))}
                     </div>
                     <div>
-                        <p className='projectSite'><FontAwesomeIcon icon={faArrowUpRightFromSquare} size='lg'/></p>
-                        <p className='projectCode'><FontAwesomeIcon icon={faCode} size='lg' /></p>
+                        <p className='projectSite'><a href={project.project.siteLink} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} size='lg'/></a></p>
+                        {project.project.githubLink && <p className='projectCode'><a href={project.project.githubLink} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faCode} size='lg' /></a></p>}
                     </div>
                 </div>
                 <div className='projectImageContainer'>
