@@ -1,3 +1,7 @@
 .appMain {
     height: 100%;
+    width: 100%;
+    padding: 0 20px 40px 20px;
+    background-color: #000;
+    color: #fff;
 }

@@ -1,52 +1,13 @@
+/* #projects {
+    padding-bottom: 30px;
+} */
+
 .projectsHeader {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.projectTitle {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.projectSummary {
-    border: 1px solid #fff;
-    border-radius: 4px;
-    padding: 15px;
-    height: 200px;
-    width: 100%;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.projectCard {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 400px;
-}
-
-.projectCardRight {
-    height: 100%;
-    width: 50%;
-}
-
-img {
-    height: 100%;
-    width: auto;
-    border-radius: 8px;
-}
-
-.projectCardLeft {
-    width: 50%;
-    height: 100%;
-}
-
-.projectLanguages {
-    display: flex;
-}
-
-.language {
-    padding-right: 20px;
+.projects {
+    margin-top: 30px;
 }
