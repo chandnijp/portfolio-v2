@@ -5,8 +5,9 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import { About } from './About'
-import { Work } from './Work'
+import { Contact } from './Contact'
 import { Projects } from './Projects'
+import { Work } from './Work'
 import './main.css'
 
 export const Main = () => {
@@ -32,6 +33,7 @@ export const Main = () => {
                 )}
                 {location.hash === '#work' && <Work/>}
                 {location.hash === '#projects' && <Projects />}
+                {location.hash === '#contact' && <Contact />}
             </div>
         </div>
     )
