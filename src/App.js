@@ -27,7 +27,7 @@ export const App = () => {
         <BrowserRouter>
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
                 <div className='appMain' id={theme}>
-                    <Navigation />
+                    <Navigation theme={theme} />
                     <Main/>
                     <Toggle />
                 </div>
