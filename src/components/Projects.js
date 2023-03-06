@@ -4,8 +4,7 @@ import liveLocalImg from '../../public/img/liveLocal.jpg'
 import { Project } from './Project'
 import './projects.css'
 
-export const Projects = () => {
-    return (
+export const Projects = () => (
         <div id='projects'>
             <div className='projectsHeader'>Some of my projects</div>
             <hr />
@@ -16,7 +15,6 @@ export const Projects = () => {
             </div>
         </div>
     )
-}
 
 const digitalInflux = {
     projectName: 'Digital Influx',
