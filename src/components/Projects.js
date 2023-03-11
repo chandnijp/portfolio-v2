@@ -2,13 +2,12 @@ import digitalInfluxImg from '../../public/img/digitalInflux.png'
 import forkifyImg from '../../public/img/forkify.png'
 import liveLocalImg from '../../public/img/liveLocal.jpg'
 import { Project } from './Project'
-import './projects.css'
 
 export const Projects = () => (
         <div id='projects'>
             <div className='projectsHeader'>Some of my projects</div>
             <hr />
-            <div className='projects'>
+            <div className='projectItems'>
                 <Project project={digitalInflux} />
                 <Project project={forkify} rowReverse/>
                 <Project project={liveLocal} />

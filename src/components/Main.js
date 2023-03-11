@@ -8,7 +8,7 @@ import { About } from './About'
 import { Contact } from './Contact'
 import { Projects } from './Projects'
 import { Work } from './Work'
-import './main.css'
+import './styles.css'
 
 export const Main = () => {
     const location = useLocation()
@@ -16,9 +16,9 @@ export const Main = () => {
     return (
         <div className='mainPage'>
             <div className='socials'>
-                <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} size='xl' className='icon' /></a>
-                <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faGithub} size='xl' className='icon' /></a>
-                <a href="mailto:chandnipatel10@hotmail.com?"><FontAwesomeIcon icon={faEnvelope} size='xl' className='icon' /></a>
+                <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer" className='socialsLink'><FontAwesomeIcon icon={faLinkedinIn} size='xl' className='socialsIcon' /></a>
+                <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer" className='socialsLink'><FontAwesomeIcon icon={faGithub} size='xl' className='socialsIcon' /></a>
+                <a href="mailto:chandnipatel10@hotmail.com?" className='socialsLink'><FontAwesomeIcon icon={faEnvelope} size='xl' className='socialsIcon' /></a>
             </div>
             <div className='mainContent'>
                 {(location.hash === '' || location.hash === '#about') && (
