@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/chandnijp/chandni-patel/issues"
   },
-  "homepage": "https://github.com/chandnijp/chandni-patel#readme",
+  "homepage": "https://github.com/chandnijp/chandni-patel#index",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/plugin-transform-react-jsx": "^7.20.13",
