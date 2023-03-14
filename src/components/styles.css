@@ -1,12 +1,8 @@
 /* NAVIGATION BAR */
 .navigation {
     top: 0;
+    left: 0;
     position: sticky;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 66px;
-    width: 100%;
     margin: 0 auto;
     font-size: 1.4em;
     padding: 20px 20px 20px 20px;
@@ -14,8 +10,26 @@
     background-color: var(--dark-theme-background);
 }
 
+.navigationMobile {
+    height: 100vh;
+    width: 100vw;
+    float: left;
+}
+
+.navItems {
+    width: 100vw;
+    left: 0;
+    margin-top: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--dark-theme-background);
+}
+
 .navItem {
-    margin-right: 30px;
+    margin-bottom: 40px;
     text-decoration: none;
 }
 
@@ -33,6 +47,14 @@
     color: var(--light-theme-font-color-primary);
 }
 
+.inlineNav {
+    display: inline;
+}
+
+.noNav {
+    display: none;
+}
+
 /* BURGER MENU */
 .burgerMenu {
     width: 2rem;
@@ -47,15 +69,50 @@
     width: 2rem;
     height: 0.25rem;
     border-radius: 10px;
-    /* background-color: var(--dark-theme-background); */
     transform-origin: 1px;
     transition: all 0.3s linear;
     background-color: #fff;
 }
 
 @media screen and (min-width: 767px) {
+    .navigation {
+        top: 0;
+        position: sticky;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 66px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.4em;
+        padding: 20px 20px 20px 20px;
+        z-index: 2;
+        background-color: var(--dark-theme-background);
+        float: none;
+    }
+
+    .navItems {
+        height: auto;
+        width: auto;
+        margin-top: 0;
+        margin-right: 30px;
+        position: relative;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navItem {
+        margin: 0 30px 0 0;
+    }
+
     .burgerMenuContainer {
         display: none;
+    }
+
+    .inlineNav, 
+    .noNav {
+        display: block;
     }
 }
 
@@ -65,6 +122,7 @@
     width: 100%;
     margin-top: 20px;
     overflow: auto;
+    padding: 0 20px 40px 20px;
 }
 
 .mainContent {

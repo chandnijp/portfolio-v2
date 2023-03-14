@@ -8,15 +8,18 @@ export const Navigation = (theme) => {
     const toggleBurgerMenu = () => {
         setBurgerMenuOpen(!burgerMenuOpen)
     }
+
     return (
-    <nav className='navigation'>
-        <Link to='#about' className={`navItem ${theme.theme}NavItem`}>About</Link>
-        <Link to='#work' className={`navItem ${theme.theme}NavItem`}>Work</Link>
-        <Link to='#projects' className={`navItem ${theme.theme}NavItem`}>Projects</Link>
-        <Link to='#contact' className={`navItem ${theme.theme}NavItem`}>Contact</Link>
-        <div className='burgerMenuContainer' onClick={toggleBurgerMenu}>
-            <BurgerMenu />
-        </div>
-    </nav>
-)
-    }
+        <nav className={`navigation ${burgerMenuOpen && 'navigationMobile'}`}>
+            <div className='navItems'>
+                <Link to='#about' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>About</Link>
+                <Link to='#work' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>Work</Link>
+                <Link to='#projects' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>Projects</Link>
+                <Link to='#contact' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>Contact</Link>
+            </div>
+            <div className='burgerMenuContainer' onClick={toggleBurgerMenu}>
+                <BurgerMenu burgerMenuOpen={burgerMenuOpen} />
+            </div>
+        </nav>
+    )
+}
