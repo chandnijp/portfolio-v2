@@ -3,14 +3,14 @@ import forkifyImg from '../../public/img/forkify.png'
 import liveLocalImg from '../../public/img/liveLocal.jpg'
 import { Project } from './Project'
 
-export const Projects = () => (
+export const Projects = ({ theme }) => (
         <div id='projects'>
             <div className='projectsHeader'>Some of my projects</div>
             <hr />
             <div className='projectItems'>
-                <Project project={digitalInflux} />
-                <Project project={forkify} rowReverse/>
-                <Project project={liveLocal} />
+                <Project theme={theme} project={digitalInflux} />
+                <Project theme={theme} project={forkify} rowReverse/>
+                <Project theme={theme} project={liveLocal} />
             </div>
         </div>
     )
@@ -39,7 +39,6 @@ const liveLocal = {
     projectSummary: 'Built while studying Colt Steele`s Web Developer Bootcamp. Having a great passion for travelling I wanted to make an app associated with experiencing local culture by living with locals.',
     languages: ['JavaScript', 'CSS', 'Node', 'MongoDB'],
     img: liveLocalImg,
-    siteLink: 'https://fierce-badlands-99416.herokuapp.com/',
     githubLink: 'https://github.com/chandnijp/LiveLocal',
     rowReverse: false
 }

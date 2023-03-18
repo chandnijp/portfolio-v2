@@ -10,15 +10,15 @@ import { Projects } from './Projects'
 import { Work } from './Work'
 import './styles.css'
 
-export const Main = () => {
+export const Main = ({ theme }) => {
     const location = useLocation()
 
     return (
         <div className='mainPage'>
             <div className='socials'>
-                <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer" className='socialsLink'><FontAwesomeIcon icon={faLinkedinIn} size='xl' className='socialsIcon' /></a>
-                <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer" className='socialsLink'><FontAwesomeIcon icon={faGithub} size='xl' className='socialsIcon' /></a>
-                <a href="mailto:chandnipatel10@hotmail.com?" className='socialsLink'><FontAwesomeIcon icon={faEnvelope} size='xl' className='socialsIcon' /></a>
+                <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="mailto:chandnipatel10@hotmail.com?" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
             <div className='mainContent'>
                 {(location.hash === '' || location.hash === '#about') && (
@@ -31,9 +31,9 @@ export const Main = () => {
                         <About />
                     </div>
                 )}
-                {location.hash === '#work' && <Work/>}
-                {location.hash === '#projects' && <Projects />}
-                {location.hash === '#contact' && <Contact />}
+                {location.hash === '#work' && <Work theme={theme}/>}
+                {location.hash === '#projects' && <Projects theme={theme}/>}
+                {location.hash === '#contact' && <Contact theme={theme}/>}
             </div>
         </div>
     )

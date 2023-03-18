@@ -1,7 +1,7 @@
 .appMain {
     height: 100%;
     width: 100%;
-    padding: 0 20px 40px 20px;
+    /* padding: 0 20px 40px 20px; */
     /* Moonlit Asteroid */
     /* background: #0F2027; */
     /* Royal */
@@ -11,29 +11,29 @@
 }
 
 #light {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--light-theme-background);
+    color: var(--light-theme-font-color-primary);
 }
 
 #dark {
-    background-color: #1f2933;
-    color: #fff;
+    background-color: var(--dark-theme-background);
+    color: var(--dark-theme-font-color-primary);
 }
 
 .colourModeToggle {
     position: fixed;
     right: 20px;
     top: 20px;
-    font-size: 1.4em;
+    font-size: 1.5em;
     z-index: 2;
 }
 
 .darkBulbIcon {
-    color: #fff;
+    color: var(--dark-theme-font-color-primary);
     width: auto;
 }
 
 .lightBulbIcon {
-    color: #1f2933;
+    color: var(--light-theme-font-colour-primary);
     width: auto;
 }

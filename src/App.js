@@ -28,7 +28,7 @@ export const App = () => {
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
                 <div className='appMain' id={theme}>
                     <Navigation theme={theme} />
-                    <Main/>
+                    <Main theme={theme}/>
                     <Toggle />
                 </div>
             </ThemeContext.Provider>

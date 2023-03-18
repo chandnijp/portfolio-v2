@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import { BurgerMenu } from './BurgerMenu'
 
-export const Navigation = (theme) => {
+export const Navigation = ({ theme }) => {
     const [burgerMenuOpen, setBurgerMenuOpen] = useState(false)
 
     const toggleBurgerMenu = () => {
@@ -10,15 +10,15 @@ export const Navigation = (theme) => {
     }
 
     return (
-        <nav className={`navigation ${burgerMenuOpen && 'navigationMobile'}`}>
+        <nav className={`navigation ${burgerMenuOpen && 'navigationMobile'} ${theme}Navigation`}>
             <div className='navItems'>
-                <Link to='#about' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>About</Link>
-                <Link to='#work' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>Work</Link>
-                <Link to='#projects' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>Projects</Link>
-                <Link to='#contact' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme.theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>Contact</Link>
+                <Link to='#about' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>about</Link>
+                <Link to='#work' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>work</Link>
+                <Link to='#projects' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>projects</Link>
+                <Link to='#contact' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>contact</Link>
             </div>
             <div className='burgerMenuContainer' onClick={toggleBurgerMenu}>
-                <BurgerMenu burgerMenuOpen={burgerMenuOpen} />
+                <BurgerMenu burgerMenuOpen={burgerMenuOpen} theme={theme}/>
             </div>
         </nav>
     )
