@@ -5,7 +5,7 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 export const Work = ({ theme }) => (
     <div id='work'>
         <div className='workHeader'>Where I work</div>
-        <hr />
+        <hr className={`${theme}HR`}/>
         <div className='workDetails'>
             <p className='workTitle'><span className='jobRole'>Full Stack Developer</span><a href='https://www.oxehealth.com/' target='_blank' rel="noreferrer" className={`${theme}CompanyLink`}><span className='companyName'> @ Oxehealth</span></a></p>
             <p className='workDuration'>June 2021 - Present</p>

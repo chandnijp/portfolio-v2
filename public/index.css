@@ -37,8 +37,8 @@ a:link {
 :root {
     height: 100vh;
     --dark-theme-background: #1f2933;
-    --light-theme-background: #ffffff;
-    --dark-theme-font-color-primary: #ffffff;
+    --light-theme-background: #fff;
+    --dark-theme-font-color-primary: #fff;
     --light-theme-font-color-primary: #1f2933;
     --content-header-main: 3em;
 }
