@@ -1,13 +1,15 @@
 import digitalInfluxImg from '../../public/img/digitalInflux.png'
 import forkifyImg from '../../public/img/forkify.png'
 import liveLocalImg from '../../public/img/liveLocal.jpg'
+import oxehealthImg from '../../public/img/oxehealth.png'
 import { Project } from './Project'
 
 export const Projects = ({ theme }) => (
         <div id='projects'>
             <div className='projectsHeader'>Some of my projects</div>
-            <hr />
+            <hr className={`${theme}HR`}/>
             <div className='projectItems'>
+                <Project theme={theme} project={oxehealth} />
                 <Project theme={theme} project={digitalInflux} />
                 <Project theme={theme} project={forkify} rowReverse/>
                 <Project theme={theme} project={liveLocal} />
@@ -15,13 +17,22 @@ export const Projects = ({ theme }) => (
         </div>
     )
 
+const oxehealth = {
+    projectName: 'Oxehealth',
+    projectSummary: 'Currently working on a patient monitoring and management web app used by clinicians for patient care. Collaborating with developers and designers to introduce new features, maintain code and ensure thoughtful and coherent user experiences across the platform. Focused on continously improving ways of working, coding practices and ensuring testing is end to end.',
+    languages: ['React', 'CSS', 'Redux', 'Typescript', 'Node', 'MariaDB', 'Jest', 'Playwright'],
+    img: oxehealthImg,
+    githubLink: 'https://oxehealth.com',
+    rowReverse: false
+}
+
 const digitalInflux = {
     projectName: 'Digital Influx',
     projectSummary: 'An education platform, providing UX design courses for kids, teenagers and young adults. Each course contains presentations, videos, lesson plans and student booklets and tracks the users progress throughout. Students can sign up and take the course of their choice directly on the platform.',
     languages: ['JavaScript', 'CSS', 'AWS', 'WordPress'],
     img: digitalInfluxImg,
     siteLink: 'https://www.digitalinflux.com/',
-    rowReverse: false
+    rowReverse: true
 }
 
 const forkify = {
@@ -31,7 +42,7 @@ const forkify = {
     img: forkifyImg,
     siteLink: 'https://zen-perlman-64f5a5.netlify.app',
     githubLink: 'https://github.com/chandnijp/forkify',
-    rowReverse: true
+    rowReverse: false
 }
 
 const liveLocal = {
@@ -40,5 +51,5 @@ const liveLocal = {
     languages: ['JavaScript', 'CSS', 'Node', 'MongoDB'],
     img: liveLocalImg,
     githubLink: 'https://github.com/chandnijp/LiveLocal',
-    rowReverse: false
+    rowReverse: true
 }
