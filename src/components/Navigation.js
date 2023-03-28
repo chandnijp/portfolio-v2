@@ -15,7 +15,7 @@ export const Navigation = ({ theme }) => {
                 <Link to='#about' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>about</Link>
                 <Link to='#work' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>work</Link>
                 <Link to='#projects' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>projects</Link>
-                <Link to='#contact' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>contact</Link>
+                <Link to='#connect' onClick={() => setBurgerMenuOpen(false)} className={`navItem ${theme}NavItem ${burgerMenuOpen ? 'inlineNav' : 'noNav'}`}>connect</Link>
             </div>
             <div className='burgerMenuContainer' onClick={toggleBurgerMenu}>
                 <BurgerMenu burgerMenuOpen={burgerMenuOpen} theme={theme}/>

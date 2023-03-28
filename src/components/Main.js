@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -18,7 +18,7 @@ export const Main = ({ theme }) => {
             <div className='socials'>
                 <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faLinkedinIn} /></a>
                 <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faGithub} /></a>
-                <a href="mailto:chandnipatel10@hotmail.com?" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faEnvelope} /></a>
+                <Link to="#connect" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faEnvelope} /></Link>
             </div>
             <div className='mainContent'>
                 {(location.hash === '' || location.hash === '#about') && (
@@ -33,7 +33,7 @@ export const Main = ({ theme }) => {
                 )}
                 {location.hash === '#work' && <Work theme={theme}/>}
                 {location.hash === '#projects' && <Projects theme={theme}/>}
-                {location.hash === '#contact' && <Contact theme={theme}/>}
+                {location.hash === '#connect' && <Contact theme={theme}/>}
             </div>
         </div>
     )
