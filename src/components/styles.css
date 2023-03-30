@@ -1,12 +1,12 @@
 /* NAVIGATION BAR */
 .lightNavigation {
-    background-color: var(--light-theme-background);
-    color: var(--light-theme-font-color-primary);
+    background-color: #fff;
+    color: #1f2933;
 }
 
 .darkNavigation {
-    background-color: var(--dark-theme-background);
-    color: var(--dark-theme-font-colour-primary);
+    background-color: #1f2933;
+    color: #fff;
 }
 
 .navigation {
@@ -17,7 +17,6 @@
     font-size: 1.4em;
     padding: 20px;
     z-index: 2;
-    /* box-shadow: 0 5px 5px -5px rgb(0, 0, 0, 0.5); */
 }
 
 .navigationMobile {
@@ -42,11 +41,11 @@
 }
 
 .lightNavItems {
-    background-color: var(--light-theme-background);
+    background-color: #fff;
 }
 
 .darkNavItems {
-    background-color: var(--dark-theme-background);
+    background-color: #1f2933;
 }
 
 .navItem {
@@ -59,13 +58,13 @@
 }
 
 .darkNavItem {
-    background-color: var(--dark-theme-background);
-    color: var(--dark-theme-font-colour-primary);
+    background-color: #1f2933;
+    color: #fff;
 }
 
 .lightNavItem {
-    background-color: var(--light-theme-background);
-    color: var(--light-theme-font-color-primary);
+    background-color: #fff;
+    color: #1f2933;
     font-weight: 600;
 }
 
@@ -96,11 +95,11 @@
 }
 
 .lightBurger {
-    background-color: var(--dark-theme-background);
+    background-color: #1f2933;
 }
 
 .darkBurger {
-    background-color: var(--light-theme-background);
+    background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -198,11 +197,11 @@
 }
 
 .lightSocialsLink {
-    color: var(--light-theme-font-color-primary);
+    color: #1f2933;
 }
 
 .darkSocialsLink {
-    color: var(--dark-theme-font-colour-primary);
+    color: #fff;
 }
 
 .socialsIcon {
@@ -252,7 +251,7 @@
     }
 
     .lightHR {
-        background-color: var(--light-theme-font-color-primary);
+        background-color: #1f2933;
         border: none;
         height: 1px;
     }
@@ -305,7 +304,7 @@
 
 /* WORK CONTENT '/work' */
 .workHeader {
-    font-size: var(--content-header-main);
+    font-size: 3em;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -324,12 +323,12 @@
 
 .lightCompanyLink {
     text-decoration: none;
-    color: var(--light-theme-font-color-primary);
+    color: #1f2933;
 }
 
 .darkCompanyLink {
     text-decoration: none;
-    color: var(--dark-theme-font-colour-primary);
+    color: #fff;
 }
 
 .companyName {
@@ -404,7 +403,7 @@
 
 /* PROJECTS CONTENT '/projects' */
 .projectsHeader {
-    font-size: var(--content-header-main);
+    font-size: 3em;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -512,12 +511,12 @@
 
 .lightProjectSiteLink,
 .lightProjectCodeLink {
-    color: var(--light-theme-font-colour-primary);
+    color: #1f2933;
 }
 
 .darkProjectSiteLink,
 .darkProjectCodeLink {
-    color: var(--dark-theme-font-colour-primary);
+    color: #fff;
 }
 
 .projectImageContainer {
@@ -547,7 +546,7 @@
 }
 
 .darkProjectImageWrapper {
-    background-color: var(--light-theme-background);
+    background-color: #fff;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 1);
     opacity: 0.5;
 }
@@ -640,7 +639,7 @@
 }
 
 .contactHeader {
-    font-size: var(--content-header-main);
+    font-size: 3em;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -683,11 +682,11 @@
 }
 
 .lightInput {
-    border: 1px solid var(--light-theme-font-color-primary);
+    border: 1px solid #1f2933;
 }
 
 .darkInput {
-    border: 1px solid var(--dark-theme-font-colour-primary);
+    border: 1px solid #fff;
 }
 
 .contactFormMessage {
@@ -698,8 +697,8 @@
 }
 
 .lightContactButton {
-    background-color: var(--light-theme-background);
-    border: 2px solid var(--light-theme-font-color-primary);
+    background-color: #fff;
+    border: 2px solid #1f2933;
     border-radius: 8px;
     font-size: 1.5em;
     font-weight: 600;
@@ -714,26 +713,19 @@
 }
 
 .darkContactButton {
-    background-color: var(--dark-theme-background);
+    background-color: #1f2933;
     border: 2px solid #fff;
-    color: var(--dark-theme-font-colour-primary);
+    color: #fff;
 }
 
 .lightContactLink {
-    color: var(--light-theme-font-colour-primary);
-    border: 2px solid var(--dark-theme-background);
+    color: #1f2933;
+    border: 2px solid #1f2933;
 }
 
 .darkContactLink {
     color: #fff;
 }
-
-/* .contactFormSocials {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-} */
 
 .successMessage {
     width: 100%;

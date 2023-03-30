@@ -26,7 +26,7 @@ export const Contact = ({ theme }) => {
                     <input name="email" id="email" type="email" className={`contactFormInput ${theme}Input`} required />
                     <label htmlFor="message" className="contactFormLabel">Message</label>
                     <textarea id="message" name="message" placeholder="Write your message here.." rows='4'className={`contactFormMessage ${theme}Input`} required></textarea>
-                    <button type="submit" className='pageclip-form__submit'>Say Hello!</button>
+                    <button type="submit" className={`pageclip-form__submit contactFormButton ${theme}ContactButton`}>Say Hello!</button>
                     {showSuccessMessage && <div className='successMessage'>Successfully sent!</div>}
                 </form>
             </div>

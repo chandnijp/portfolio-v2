@@ -7,7 +7,7 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { About } from './About'
 import { Contact } from './Contact'
 import { Projects } from './Projects'
-import { Work } from './Work'
+// import { Work } from './Work'
 import './styles.css'
 
 export const Main = ({ theme }) => {
@@ -31,7 +31,7 @@ export const Main = ({ theme }) => {
                         <About />
                     </div>
                 )}
-                {location.hash === '#work' && <Work theme={theme}/>}
+                {/* {location.hash === '#work' && <Work theme={theme}/>} */}
                 {location.hash === '#projects' && <Projects theme={theme}/>}
                 {location.hash === '#connect' && <Contact theme={theme}/>}
             </div>
