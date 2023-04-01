@@ -1,0 +1,853 @@
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/styles.css ***!
+  \*****************************************************************************/
+/* NAVIGATION BAR */
+.lightNavigation {
+    background-color: #fff;
+    color: #1f2933;
+}
+
+.darkNavigation {
+    background-color: #1f2933;
+    color: #fff;
+}
+
+.navigation {
+    top: 0;
+    left: 0;
+    position: sticky;
+    margin-bottom: 0 !important;
+    font-size: 1.4em;
+    padding: 20px;
+    z-index: 2;
+}
+
+.navigationMobile {
+    height: 100%;
+    width: 100vw;
+    float: left;
+}
+
+.navItems {
+    width: 100vw;
+    left: 0;
+    margin-top: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.showNavItems {
+    height: 100%;
+}
+
+.lightNavItems {
+    background-color: #fff;
+}
+
+.darkNavItems {
+    background-color: #1f2933;
+}
+
+.navItem {
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.navItem:hover {
+    cursor: pointer;
+}
+
+.darkNavItem {
+    background-color: #1f2933;
+    color: #fff;
+}
+
+.lightNavItem {
+    background-color: #fff;
+    color: #1f2933;
+    font-weight: 600;
+}
+
+.inlineNav {
+    display: inline;
+}
+
+.noNav {
+    display: none;
+}
+
+/* BURGER MENU */
+.burgerMenu {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 2
+}
+
+.burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+}
+
+.lightBurger {
+    background-color: #1f2933;
+}
+
+.darkBurger {
+    background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        top: 0;
+        position: sticky;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 0 !important;
+        font-size: 1.4em;
+        padding: 20px;
+        z-index: 2;
+        float: none;
+    }
+
+    .navItems {
+        height: auto;
+        width: auto;
+        margin-top: 0;
+        margin-right: 30px;
+        position: relative;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navItem {
+        margin: 0 30px 0 0;
+    }
+
+    .burgerMenuContainer {
+        display: none;
+    }
+
+    .inlineNav, 
+    .noNav {
+        display: block;
+    }
+}
+
+/* INITIAL PAGE CONTENT '/'  */
+.mainPage {
+    flex: 1;
+    height: 100%;
+    overflow-y: hidden;
+    padding: 10px 10px 20px 10px;
+}
+
+.mainContent {
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    padding-left: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.mainIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.introWelcome {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.introHeader {
+    font-size: 4em;
+    line-height: 1em;
+    color: #CBD2D9;
+}
+
+.introSubheader {
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.socials {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.lightSocialsLink {
+    color: #1f2933;
+}
+
+.darkSocialsLink {
+    color: #fff;
+}
+
+.socialsIcon {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .mainPage {
+        height: 100%;
+        padding: 40px 20px 0 20px;
+    }
+
+    .mainContent {
+        padding: 0;
+    }
+
+    .mainIntro {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 106px; /* nav bar height + top padding*/
+    }
+
+    .intro {
+        margin-bottom: 60px;
+    }
+
+    .introWelcome {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .introHeader {
+        font-size: 6em;
+        margin: 20px 0;
+    }
+
+    .introSubheader {
+        font-size: 3em;
+        margin-top: 0;
+    }
+
+    .socials {
+        margin-bottom: 20px;
+    }
+
+    .lightHR {
+        background-color: #1f2933;
+        border: none;
+        height: 1px;
+    }
+
+    .darkHR {
+        background-color: #fff;
+        border: none;
+        height: 1px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mainPage {
+        padding: 20px;
+    }
+
+    .mainIntro {
+        padding-bottom: 46px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainPage {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .mainIntro {
+        overflow: hidden
+    }
+}
+
+/* ABOUT CONTENT '/about' */
+.aboutContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutContainer {
+        width: 76%;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+}
+
+/* WORK CONTENT '/work' */
+.workHeader {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.workTitle {
+    width: 230px;
+}
+
+.workDetails {
+    padding-top: 40px;
+}
+
+.jobRole {
+    font-size: 1.5em;
+}
+
+.lightCompanyLink {
+    text-decoration: none;
+    color: #1f2933;
+}
+
+.darkCompanyLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.companyName {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.workDuration {
+    font-size: 1em;
+    margin: 5px 0 30px 0;
+}
+
+.workDescription {
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.workDescriptionItem {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.descriptionIcon {
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.workLanguages {
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.lightWorkLanguage {
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.darkWorkLanguage {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .workTitle {
+        width: auto;
+    }
+
+    .workDescription {
+        margin-left: 50px;
+    }
+
+    .workDescriptionItem {
+        margin-bottom: 20px;
+    }
+
+    .workLanguages {
+        margin-top: 50px;
+    }
+
+    .lightWorkLanguage,
+    .darkWorkLanguage {
+        margin-top: 0;
+    }
+}
+
+/* PROJECTS CONTENT '/projects' */
+.projectsHeader {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.projectItems {
+    margin-top: 30px;
+}
+
+/* PROJECT CONTENT '/project' */
+.projectCard {
+    flex-direction: row;
+    width: 100%;
+}
+
+.projectCardReverse {
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    padding: 0 15px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.projectDescription {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.projectDescriptionReverse {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.projectTitle {
+    font-size: 1.6em;
+}
+
+.projectSummary {
+    border-radius: 8px;
+    padding: 20px;
+    height: auto;
+    width: 170%;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.lightProjectSummary {
+    background-color: #FAF0E6;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.darkProjectSummary {
+    background-color: #000;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+}
+
+.projectLanguages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.projectLanguagesReverse {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.projectLanguage {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.projectLanguageReverse {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.projectSite,
+.projectCode {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.lightProjectSiteLink,
+.lightProjectCodeLink {
+    color: #1f2933;
+}
+
+.darkProjectSiteLink,
+.darkProjectCodeLink {
+    color: #fff;
+}
+
+.projectImageContainer {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.projectImageContainerReverse {
+    justify-content: flex-start;
+}
+
+.projectImageWrapper {
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lightProjectImageWrapper {
+    opacity: 1;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.darkProjectImageWrapper {
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 1);
+    opacity: 0.5;
+}
+
+.lightProjectImage {
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+}
+
+.darkProjectImage {
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+    opacity: 50%;
+}
+
+.projectLanguagesLinksMobile {
+    width: auto;
+    margin-bottom: 80px;
+}
+
+.projectLanguagesLinksMobileReverse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+    margin-bottom: 80px;
+}
+
+.projectLanguagesLinksMobile:last-child,
+.projectLanguagesLinksMobileReverse:last-child {
+    margin-bottom: 0;
+} 
+
+.projectLanguagesTablet,
+.projectLinksTablet {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        height: 400px;
+        margin-bottom: 80px;
+    }
+
+    .projectTitle {
+        font-size: 2em;
+    }
+
+    .projectImageWrapper {
+        height: 300px;
+    }
+
+    .lightProjectImage,
+    .darkProjectImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .projectLanguages {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+
+    .projectLanguage {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .projectLanguageReverse {
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .projectLanguagesLinksMobile,
+    .projectLanguagesLinksMobileReverse {
+        display: none;
+    }
+
+    .projectLanguagesTablet,
+    .projectLinksTablet {
+        display: flex;
+    }
+}
+
+/* CONTACT CONTENT '/contact' */
+#connect {
+    height: 100%;
+}
+
+.contactHeader {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contactFormContainer {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactFormText {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contactFormLabel {
+    margin-bottom: 5px;
+}
+
+.contactFormInput {
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.lightInput {
+    border: 1px solid #1f2933;
+}
+
+.darkInput {
+    border: 1px solid #fff;
+}
+
+.contactFormMessage {
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.lightContactButton {
+    background-color: #fff;
+    border: 2px solid #1f2933;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.contactFormButton {
+    border-radius: 8px;
+    font-size: 1.5em;
+    padding: 15px 20px;
+    margin: 30px auto;
+}
+
+.darkContactButton {
+    background-color: #1f2933;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.lightContactLink {
+    color: #1f2933;
+    border: 2px solid #1f2933;
+}
+
+.darkContactLink {
+    color: #fff;
+}
+
+.successMessage {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactFormContainer {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .contactForm {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .contactFormText {
+        width: 60%;
+        margin: 0 auto 40px auto;
+    }
+
+    .contactFormButton {
+        margin: 40px auto 0 auto;
+    }
+}
+
+/* @media (min-width: 640px) {
+
+} */
+
+/* @media (min-width: 768px) {
+
+} */
+
+/* @media (min-width: 1024px) {
+
+} */
+
+/* @media (min-width: 1200px) {
+
+} */
+
+/*!***************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/App.css ***!
+  \***************************************************************/
+.appMain {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#light {
+    background-color: #fff;
+    color: #1f2933;
+}
+
+#dark {
+    background-color: #1f2933;
+    color: #fff;
+}
+
+.colourModeToggle {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+.darkBulbIcon {
+    color: #fff;
+    width: auto;
+}
+
+.lightBulbIcon {
+    color: #1f2933;
+    width: auto;
+}
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./public/index.css ***!
+  \********************************************************************/
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+/* html { */
+    /* font-family: Tahoma, Verdana, sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif */
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+/* } */
+
+html,
+body { 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+:root {
+    height: 100vh;
+}
+
