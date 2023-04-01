@@ -1,10 +1,13 @@
 {
   "name": "chandni-patel",
   "version": "1.0.0",
+  "homepage": "http://chandnijp.github.io/portfolio-v2",
   "description": "My professional web dev portfolio",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --config webpack.config.js --mode=development",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix --ext .js ./src"
@@ -23,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/chandnijp/chandni-patel/issues"
   },
-  "homepage": "https://github.com/chandnijp/chandni-patel#index",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/plugin-transform-react-jsx": "^7.20.13",
@@ -37,6 +39,7 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "image-webpack-loader": "^8.1.0",
