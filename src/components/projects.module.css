@@ -15,11 +15,17 @@
 }
 
 .projectsHeader {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .projectItems {
     margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .projectsHeader {
+        font-size: 3em;
+    }
 }

@@ -7,7 +7,6 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { About } from './About'
 import { Contact } from './Contact'
 import { Projects } from './Projects'
-// import { Work } from './Work'
 import css from './main.module.css'
 
 export const Main = ({ theme }) => {
@@ -15,7 +14,7 @@ export const Main = ({ theme }) => {
 
     return (
         <div className={css.mainPage}>
-            <div className={css.socials}>
+            <div className={css.desktopSocials}>
                 <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer" className={`${css.socialsIcon} ${css[`${theme}SocialsLink`]}`}><FontAwesomeIcon icon={faLinkedinIn} /></a>
                 <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer" className={`${css.socialsIcon} ${css[`${theme}SocialsLink`]}`}><FontAwesomeIcon icon={faGithub} /></a>
                 <Link to="#connect" className={`${css.socialsIcon} ${css[`${theme}SocialsLink`]}`}><FontAwesomeIcon icon={faEnvelope} /></Link>
@@ -31,7 +30,6 @@ export const Main = ({ theme }) => {
                         <About />
                     </div>
                 )}
-                {/* {location.hash === '#work' && <Work theme={theme}/>} */}
                 {location.hash === '#projects' && <Projects theme={theme}/>}
                 {location.hash === '#connect' && <Contact theme={theme}/>}
             </div>

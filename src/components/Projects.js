@@ -6,7 +6,7 @@ import { Project } from './Project'
 import css from './projects.module.css'
 
 export const Projects = ({ theme }) => (
-        <div id='projects'>
+        <div id='projects' className={css.projects}>
             <div className={css.projectsHeader}>Some of my projects</div>
             <hr className={css[`${theme}HR`]}/>
             <div className={css.projectItems}>

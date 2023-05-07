@@ -1,9 +1,4 @@
 .aboutContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     font-size: 1.3em;
     line-height: 1.3em;
 }
@@ -13,5 +8,14 @@
         width: 76%;
         font-size: 1.5em;
         line-height: 1.5em;
+        /* moves section up by main content top padding */
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutContainer {
+        /* moves section up by main content top padding */
+        padding-bottom: 20px;
     }
 }

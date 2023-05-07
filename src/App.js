@@ -26,11 +26,13 @@ export const App = () => {
     return (
         <BrowserRouter>
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
-                <main className='appMain' id={theme}>
+                <div className={`app ${theme}`}>
                     <Navigation theme={theme} />
-                    <Main theme={theme}/>
                     <Toggle />
-                </main>
+                    <main className='main'>
+                        <Main theme={theme}/>
+                    </main>
+                </div>
             </ThemeContext.Provider>
         </BrowserRouter>
     )

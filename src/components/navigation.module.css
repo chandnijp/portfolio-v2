@@ -1,9 +1,15 @@
-.lightNavigation {
+.lightNavigation,
+.lightNavItems,
+.lightNavItem,
+.lightSocialsLink {
     background-color: #fff;
     color: #1f2933;
 }
 
-.darkNavigation {
+.darkNavigation,
+.darkNavItems,
+.darkNavItem,
+.darkSocialsLink {
     background-color: #1f2933;
     color: #fff;
 }
@@ -12,22 +18,23 @@
     top: 0;
     left: 0;
     position: sticky;
-    margin-bottom: 0 !important;
     font-size: 1.4em;
-    padding: 20px;
     z-index: 2;
 }
 
 .navigationMobile {
-    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
     width: 100vw;
-    float: left;
+    font-size: 1.4em;
+    z-index: 2;
 }
 
 .navItems {
-    width: 100vw;
-    left: 0;
-    margin-top: 30px;
+    width: 100%;
+    margin-top: 72px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -36,15 +43,7 @@
 }
 
 .showNavItems {
-    height: calc(100vh - 50px);
-}
-
-.lightNavItems {
-    background-color: #fff;
-}
-
-.darkNavItems {
-    background-color: #1f2933;
+    height: 100%;
 }
 
 .navItem {
@@ -56,15 +55,13 @@
     cursor: pointer;
 }
 
-.darkNavItem {
-    background-color: #1f2933;
-    color: #fff;
+.lightNavItem {
+    font-weight: 600;
 }
 
-.lightNavItem {
-    background-color: #fff;
-    color: #1f2933;
-    font-weight: 600;
+.socialsIcon {
+    font-size: 1em;
+    margin: 0 10px;
 }
 
 .inlineNav {
@@ -78,19 +75,16 @@
 @media screen and (min-width: 768px) {
     .navigation {
         top: 0;
+        left: 0;
         position: sticky;
         display: flex;
         justify-content: end;
         align-items: center;
-        margin-bottom: 0 !important;
         font-size: 1.4em;
         padding: 20px;
-        z-index: 2;
-        float: none;
     }
 
     .navItems {
-        height: auto;
         width: auto;
         margin-top: 0;
         margin-right: 30px;
@@ -104,12 +98,13 @@
         margin: 0 30px 0 0;
     }
 
-    .inlineNav, 
-    .noNav {
-        display: block;
-    }
-
+    .mobileSocials,
+    .inlineNav,
     .burgerMenuContainer {
         display: none;
+    }
+
+    .noNav {
+        display: block;
     }
 }
