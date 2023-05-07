@@ -1,0 +1,140 @@
+.lightHR {
+    background-color: #1f2933;
+    border: none;
+    height: 1px;
+}
+
+.darkHR {
+    background-color: #fff;
+    border: none;
+    height: 1px;
+    width: 100%;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)); */
+}
+
+.connect {
+    height: 100%;
+}
+
+.contactHeader {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contactFormContainer {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactFormText {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contactFormLabel {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.contactFormInput {
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.contactFormInput:focus-visible {
+    outline: none;
+}
+
+.lightInput {
+    border: 1px solid #1f2933;
+}
+
+.darkInput {
+    border: 1px solid #fff;
+}
+
+.contactFormMessage {
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.lightContactButton {
+    background-color: #fff;
+    border: 2px solid #1f2933;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.contactFormButton {
+    border-radius: 8px;
+    font-size: 1.5em;
+    padding: 15px 20px;
+    margin: 30px auto;
+}
+
+.darkContactButton {
+    background-color: #1f2933;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.lightContactLink {
+    color: #1f2933;
+    border: 2px solid #1f2933;
+}
+
+.darkContactLink {
+    color: #fff;
+}
+
+.successMessage {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactFormContainer {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .contactForm {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .contactFormText {
+        width: 70%;
+        margin: 0 auto 40px auto;
+    }
+
+    .contactFormButton {
+        margin: 30px auto 0 auto;
+    }
+}

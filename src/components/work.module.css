@@ -1,0 +1,97 @@
+.workHeader {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.workTitle {
+    width: 230px;
+}
+
+.workDetails {
+    padding-top: 40px;
+}
+
+.jobRole {
+    font-size: 1.5em;
+}
+
+.lightCompanyLink {
+    text-decoration: none;
+    color: #1f2933;
+}
+
+.darkCompanyLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.companyName {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.workDuration {
+    font-size: 1em;
+    margin: 5px 0 30px 0;
+}
+
+.workDescription {
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.workDescriptionItem {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.descriptionIcon {
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.workLanguages {
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.lightWorkLanguage {
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.darkWorkLanguage {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .workTitle {
+        width: auto;
+    }
+
+    .workDescription {
+        margin-left: 50px;
+    }
+
+    .workDescriptionItem {
+        margin-bottom: 20px;
+    }
+
+    .workLanguages {
+        margin-top: 50px;
+    }
+
+    .lightWorkLanguage,
+    .darkWorkLanguage {
+        margin-top: 0;
+    }
+}

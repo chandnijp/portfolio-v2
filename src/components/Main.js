@@ -8,25 +8,25 @@ import { About } from './About'
 import { Contact } from './Contact'
 import { Projects } from './Projects'
 // import { Work } from './Work'
-import './styles.css'
+import css from './main.module.css'
 
 export const Main = ({ theme }) => {
     const location = useLocation()
 
     return (
-        <div className='mainPage'>
-            <div className='socials'>
-                <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faGithub} /></a>
-                <Link to="#connect" className={`socialsIcon ${theme}SocialsLink`}><FontAwesomeIcon icon={faEnvelope} /></Link>
+        <div className={css.mainPage}>
+            <div className={css.socials}>
+                <a href='https://www.linkedin.com/in/chandni-patel-3866a279' target={'_blank'} rel="noreferrer" className={`${css.socialsIcon} ${css[`${theme}SocialsLink`]}`}><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                <a href="https://github.com/chandnijp" target={'_blank'} rel="noreferrer" className={`${css.socialsIcon} ${css[`${theme}SocialsLink`]}`}><FontAwesomeIcon icon={faGithub} /></a>
+                <Link to="#connect" className={`${css.socialsIcon} ${css[`${theme}SocialsLink`]}`}><FontAwesomeIcon icon={faEnvelope} /></Link>
             </div>
-            <div className='mainContent'>
+            <div className={css.mainContent}>
                 {(location.hash === '' || location.hash === '#about') && (
-                    <div className='mainIntro'>
-                        <div className='intro'>
-                            <p className='introWelcome'>Hi, my name is</p>
-                            <p className='introHeader'>Chandni Patel</p>
-                            <p className='introSubheader'><FontAwesomeIcon icon={faChevronLeft}/>I build websites<FontAwesomeIcon icon={faChevronRight}/></p>
+                    <div className={css.mainIntro}>
+                        <div className={css.intro}>
+                            <p className={css.introWelcome}>Hi, my name is</p>
+                            <p className={css.introHeader}>Chandni Patel</p>
+                            <p className={css.introSubheader}><FontAwesomeIcon icon={faChevronLeft}/>I build websites<FontAwesomeIcon icon={faChevronRight}/></p>
                         </div>
                         <About />
                     </div>

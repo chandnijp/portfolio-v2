@@ -1,0 +1,25 @@
+@import './styles.css';
+
+.lightHR {
+    background-color: #1f2933;
+    border: none;
+    height: 1px;
+}
+
+.darkHR {
+    background-color: #fff;
+    border: none;
+    height: 1px;
+    width: 100%;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)); */
+}
+
+.projectsHeader {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.projectItems {
+    margin-top: 30px;
+}

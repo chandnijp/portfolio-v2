@@ -1,0 +1,222 @@
+.projectCard {
+    flex-direction: row;
+    width: 100%;
+}
+
+.projectCardReverse {
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    padding: 0 15px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.projectDescription {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.projectDescriptionReverse {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.projectTitle,
+.projectTitleReverse {
+    font-size: 1.6em;
+    text-align: right;
+}
+
+.projectSummary {
+    border-radius: 8px;
+    padding: 20px;
+    height: auto;
+    width: 170%;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.lightProjectSummary {
+    background-color: #FAF0E6;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.darkProjectSummary {
+    background-color: #000;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+}
+
+.projectLanguages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.projectLanguagesReverse {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.projectLanguage {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.projectLanguageReverse {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.projectSite,
+.projectCode {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.lightProjectSiteLink,
+.lightProjectCodeLink {
+    color: #1f2933;
+}
+
+.darkProjectSiteLink,
+.darkProjectCodeLink {
+    color: #fff;
+}
+
+.projectImageContainer {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.projectImageContainerReverse {
+    justify-content: flex-start;
+}
+
+.projectImageWrapper {
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lightProjectImageWrapper {
+    opacity: 1;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.darkProjectImageWrapper {
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 1);
+    opacity: 0.5;
+}
+
+.lightProjectImage {
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+}
+
+.darkProjectImage {
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+    opacity: 50%;
+}
+
+.projectLanguagesLinksMobile {
+    width: auto;
+    margin-bottom: 80px;
+}
+
+.projectLanguagesLinksMobileReverse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+    margin-bottom: 80px;
+}
+
+.projectLanguagesLinksMobile:last-child,
+.projectLanguagesLinksMobileReverse:last-child {
+    margin-bottom: 0;
+} 
+
+.projectLanguagesTablet,
+.projectLinksTablet {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        height: 400px;
+        margin-bottom: 80px;
+    }
+
+    .projectTitle,
+    .projectTitleReverse {
+        font-size: 2em;
+    }
+
+    .projectImageWrapper {
+        height: 300px;
+    }
+
+    .lightProjectImage,
+    .darkProjectImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .projectLanguages {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+
+    .projectLanguage {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .projectLanguageReverse {
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .projectLanguagesLinksMobile,
+    .projectLanguagesLinksMobileReverse {
+        display: none;
+    }
+
+    .projectLanguagesTablet,
+    .projectLinksTablet {
+        display: flex;
+    }
+}

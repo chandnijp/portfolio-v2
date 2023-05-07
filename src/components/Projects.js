@@ -3,12 +3,13 @@ import forkifyImg from '../../public/img/forkify.png'
 import liveLocalImg from '../../public/img/liveLocal.jpg'
 import oxehealthImg from '../../public/img/oxehealth.png'
 import { Project } from './Project'
+import css from './projects.module.css'
 
 export const Projects = ({ theme }) => (
         <div id='projects'>
-            <div className='projectsHeader'>Some of my projects</div>
-            <hr className={`${theme}HR`}/>
-            <div className='projectItems'>
+            <div className={css.projectsHeader}>Some of my projects</div>
+            <hr className={css[`${theme}HR`]}/>
+            <div className={css.projectItems}>
                 <Project theme={theme} project={oxehealth} />
                 <Project theme={theme} project={digitalInflux} />
                 <Project theme={theme} project={forkify} rowReverse/>
